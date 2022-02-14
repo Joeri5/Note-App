@@ -1,0 +1,11 @@
+.header {
+    @apply flex justify-between items-center;
+}
+
+.header_text {
+    @apply text-[50px] font-bold;
+}
+
+.header_btn {
+    @apply py-[9px] px-[8px] rounded-[15px] text-[22px] font-medium bg-gray-300 shadow-md dark:text-black;
+}

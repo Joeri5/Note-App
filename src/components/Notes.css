@@ -1,0 +1,71 @@
+.notes {
+    margin-top: 28px;
+}
+
+.notes-grid {
+    @apply grid grid-cols-3 gap-5;
+}
+
+@media screen and (max-width: 1200px) {
+    .notes-grid {
+        @apply grid-cols-2;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .notes-grid {
+        @apply grid-cols-1;
+    }
+}
+
+.notes-note {
+    @apply shadow-md;
+    background: #FDFF87;
+    border-radius: 20px;
+}
+
+.notes-note-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.notes-note-textarea {
+    @apply dark:text-black;
+    width: 100%;
+    background: #FDFF87;
+    resize: none;
+}
+
+.notes-note-textarea:focus, .notes-note-textarea:active,
+.notes-note-textarea-creation:focus, .notes-note-textarea-creation:active {
+    border: none;
+    outline: none;
+}
+
+.notes-note-action {
+    @apply dark:text-black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notes-note-action > svg {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.notes-note-creation {
+    @apply shadow-md;
+    background: #9AFFCF;
+    border-radius: 20px;
+}
+
+.notes-note-textarea-creation {
+    @apply dark:text-black;
+    width: 100%;
+    background: #9AFFCF;
+    resize: none;
+}
